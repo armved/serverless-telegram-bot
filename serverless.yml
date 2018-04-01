@@ -8,13 +8,3 @@ provider:
 functions:
   hello:
     handler: handler.hello
-
-plugins:
-- serverless-domain-manager
-
-custom:
-  customDomain:
-    domainName: www.armved.xyz
-    basePath: ''
-    stage: ${self:provider.stage}
-    createRoute53Record: true
